@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .Row
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column
+{
+    display: table-cell;
+     /*Optional*/
+}
+.a{
+    color:white;
+    background-color: black;
+}
+ 
+#footer {
+    background-color:#212121;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+#header {
+    background-color:#F44336;
+    color:white;
+    text-align:center;
+    padding:5px;
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <form action="notify.jsp" method="POST">
+                <div class="Row"> <div class="Column"> Get notified when new recipes are added<input type="email" name="em" placeholder="YourEmail"><input  class="a" type="submit" value="NotifyMe!" name="nty">
+            </form></div></div>
+</div>
+        <div><div class="Row">
+                
+                <div class="Column"><h2 >Thai Red</br>Chicken Curry</h2><a href="trcc.html"><img src="1.jpg"/></a></div>
+                <div class="Column"><h2>Mint and Cream</br>Chicken Curry</h2><a href="mccc.html"><img src="2.jpg"/></a></div>
+                <div class="Column"><h2>Penne in</br>white sauce</h2><a href="pws.html"><img src="3.jpg"/></a></div>
+            </div>
+                <div class="Row">
+                    <div class="Column"><h2>Green Beans in </br>Pomegranate- Coconut Sauce</h2><a href="gbpcs.html"><img src="4.jpg"/></a></div>
+                    <div class="Column"><h2>Eggplant in</br>Cashew Coconut Curry </h2><a href="eccc.html"><img src="5.jpg"/></a></div>
+                    <div class="Column"><h2>Rigatoni with Eggplant and </br>Mushroom in Spicy Tomato Sauce </h2><a href="remsts.html"><img src="6.jpg"/></a></div>
+            </div>
+            <div class="Row">
+                <div class="Column"><h2>Chunky </br>Vegetable Paella</h2><a href="cvp.html"><img src="7.jpg"/></a></div>
+                <div class="Column"><h2>Half Baked </br>Chapati </h2><a href="hbc.html"><img src="8.jpg"/></a></div>
+                <div class="Column"></div>
+            </div>
+        </div>
+        <div id="footer">
+    <div class="Row">
+        <div class="Column"><h>WE BELIEVE</h></br>
+            <p>health starts with a home cooked </br> meal.</p></div>
+        <div class="Column"><h>WE EMPOWER</h></br> 
+            <p>you with our recipe box to become a </br>kitchen hero.</p></div>
+        <div class="Column"><h>WE TRANSFORM</h></br>
+            <p>your kitchen into a lively place.</p></div>
+</div>
+        </div>
+         <div class="Row">
+            <div class="Column" align="center"><h3 style="margin-bottom:0px">Contact Us</h3></br>
+                <p>Phone Number:9787405556</br>Email:communicate@cookup.com</br>Address:Vellore</p></div>
+            <div class="Column" align="center"><h3 style="margin-bottom:0px">Delivery</h3></br>
+                <p> Free Delivery</br>one day(min) in advance</p>
+                            
+            </div>
+            <div class="Column" align="center"><h3 style="margin-bottom:0px">Follow Us On</h3></br>
+                <p style="margin-top:20px"><a  href="www.facebook.com/cookup">Facebook</a></br>
+                    <a href="www.twitter.com/cookup">Twitter</a></p></div>
+        </div>
+    </body>
+</html>

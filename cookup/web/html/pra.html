@@ -1,0 +1,54 @@
+<html>
+<head>
+<script>
+var flag = false;
+var flag1 = false;
+function validate()
+{
+var s = form1.upwd.value;
+var repwd1 = /^\w{6,8}$/;
+if ( !repwd1.test(s) )
+{ 
+alert("enter a alphanumric set of min 6 or max 8 chars");
+form1.upwd.value= " ";
+}
+else
+flag = true; 
+}
+function check()
+{
+if ( form1.upwd.value != form1.cpwd.value )
+{
+alert("password doesn't match")
+form1.cpwd.value= " ";
+}
+else 
+flag = true; 
+}
+function check()
+{
+if ( form1.upwd.value != form1.cpwd.value )
+{
+alert("password doesn't match")
+form1.cpwd.value= " ";
+}
+else 
+flag1 = true;
+}
+</script>
+</head>
+<body>
+<form name ="form1" action="Registration" method="POST">
+<table border ="1" width=30px height=30px>
+<tr><td>
+<strong>User_Name:</strong>
+<input type="text" name="user"></td></tr>
+<tr><td><strong>Password:</strong>
+<input type="password" name="upwd" onblur="validate()" ></td></tr>
+<tr><td><strong>Confirm_Password:</strong>
+<input type="password" name="cpwd" onblur="check()"></td></tr>
+</table>
+<input type="submit" name="button" value ="finalize">
+</form>
+</body>
+</html> 
